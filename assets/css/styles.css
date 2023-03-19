@@ -27,6 +27,13 @@ body {
     font-size: 14px;
     color: rgb(46, 76, 56);
   }
+  div.hero {
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+  }
 }
 @media screen and (min-width: 961px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
@@ -192,10 +199,10 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
 }
 .hero .hero-text {
   width: 100%;
-  height: 100vh;
   display: flex;
   z-index: 1;
   position: relative;
@@ -234,4 +241,28 @@ body {
 .hero .hero-text a:hover {
   transform: scale(1.1);
   color: #fbad27;
+}
+
+/*horizontal lin*/
+.separator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.separator h3 {
+  padding: 0 2rem; /* creates the space */
+  color: #04aa6d;
+}
+
+.separator .line-before {
+  flex: 1;
+  height: 2px;
+  background-image: linear-gradient(to right, #fbad27, #04aa6d);
+}
+.separator .line-after {
+  flex: 1;
+  height: 2px;
+  background-image: linear-gradient(to right, #04aa6d, #fbad27);
 }
