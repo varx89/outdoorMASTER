@@ -9,10 +9,12 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
     <link
       href="https://unpkg.com/css.gg@2.0.0/icons/css/menu.css"
       rel="stylesheet"
     />
+
     <title>Outdoor MASTER - Maestrul tau in articole outdoor</title>
   </head>
   <body>
@@ -47,33 +49,50 @@
         </div>
       </div>
 
-      <div class="menu-mobile">
-        <i class="gg-menu"></i>
-        <span>Meniu</span>
-      </div>
-      <div class="wrapper">
-        <nav class="navigation">
-          <ul class="nav-ul">
-            <li>Imbracaminte</li>
-            <li>Incaltaminte</li>
-            <li>Camping & Drumetii</li>
-            <li>Sporturi de iarna</li>
-            <li>Alpinism</li>
-            <li>Branduri</li>
-          </ul>
-        </nav>
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active"><i class="fa-solid fa-house"></i></a>
+        <a href="#imbracaminte">Imbracaminte</a>
+        <a href="#incaltaminte">Incaltaminte</a>
+        <a href="#camping-drumetii">Camping si drumetii</a>
+        <a href="#sporturi-de-iarna">Sporturi de iarna</a>
+        <a href="#alpinism">Alpinism</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa-solid fa-bars"></i>
+        </a>
       </div>
     </header>
 
+    <section class="container">
+      <div class="before-hero-1">
+        <a href="#noutati">Noutati</a>
+        <a href="#promotii">Promotii</a>
+      </div>
+      <div id="before-hero-gap">|</div>
+      <div class="before-hero-2">
+        <a href="#top-vanzari">Top Vanzari</a>
+        <a href="#20-extra">-20% Extra</a>
+      </div>
+      <div id="before-hero-gap">|</div>
+      <div class="before-hero-3">
+        <a href="#voucher">Vouchere</a>
+      </div>
+    </section>
+
     <section>
-      <div class="hero-image">
-        <img src="./assets/images/tents-hero.jpeg" />
+      <div class="hero">
+        <img src="./assets/images/tents-hero-2.jpeg" />
         <div class="hero-text">
-          <h1>I am John Doe</h1>
-          <p>And I'm a Photographer</p>
-          <button>Hire me</button>
+          <h1>Mens Collection 2022</h1>
+          <p>
+            The new winter collection is finally here. Explore our new mens
+            winter wear 2022 collection
+          </p>
+          <a href="#" title="call to action button">Explore Collection</a>
         </div>
       </div>
     </section>
+
+    <!-- Scripts -->
+    <script src="./assets/scripts/togglediv.js"></script>
   </body>
 </html>

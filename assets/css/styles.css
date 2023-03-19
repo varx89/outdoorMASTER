@@ -1,6 +1,8 @@
 body {
   margin: 0;
   overflow-x: hidden;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
 }
 @media screen and (min-width: 320px) and (max-width: 960px) {
   /* smartphones, iPhone, portrait 480x320 phones */
@@ -21,38 +23,9 @@ body {
     height: 30px;
     border: 0;
     outline: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     color: rgb(46, 76, 56);
-  }
-  ul.nav-ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    justify-content: center;
-    color: whitesmoke;
-  }
-  div.menu-mobile {
-    display: flex;
-    align-items: center;
-    padding: 15px 0 15px 20px;
-    background-color: #2c5f41;
-  }
-  div.menu-mobile > span {
-    margin-left: 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    color: whitesmoke;
-    position: relative;
-    cursor: pointer;
-  }
-  i.gg-menu {
-    color: whitesmoke;
   }
 }
 @media screen and (min-width: 961px) {
@@ -73,7 +46,7 @@ body {
     height: 30px;
     border: 0;
     outline: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     color: rgb(46, 76, 56);
   }
@@ -82,7 +55,7 @@ body {
 #header-message > h1 {
   display: flex;
   width: 100vw;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   justify-content: center;
   align-items: center;
@@ -128,7 +101,7 @@ body {
   background-color: #2c5f41;
   color: whitesmoke;
   font-weight: bold;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   padding: 9px;
 }
@@ -141,55 +114,73 @@ body {
   color: whitesmoke;
 }
 
-.menu-mobile {
-  display: none;
-}
-
 .wrapper {
   display: flex;
   flex-wrap: wrap;
   margin: 0 0 20px 0;
   width: 100vw;
 }
-.navigation {
-  background-color: #2c5f41;
-  width: 100vw;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.before-hero-1 a {
+  color: #fbad27;
+  margin-right: 20px;
+  text-decoration: none;
 }
-.nav-ul {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 30px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  justify-content: center;
-  color: whitesmoke;
+.before-hero-2 a {
+  color: #be3081;
+  margin-right: 20px;
+  text-decoration: none;
+}
+.before-hero-3 a {
+  color: #2c5f41;
+  margin-right: 20px;
+  text-decoration: none;
+}
+#before-hero-gap {
+  color: #808080;
+  margin-right: 20px;
+  text-decoration: none;
 }
 
-/* The hero image */
-.hero-image > img {
-  /* Set a specific height */
+.hero {
   width: 100vw;
-
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
   position: relative;
+  font-family: "Open Sans", sans-serif;
 }
-
-/* Place text in the middle of the image */
-.hero-text {
-  text-align: center;
+.hero img {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.hero .hero-text {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  z-index: 1;
+  position: relative;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+.hero .hero-text h1 {
+  color: #fff;
+  font-size: 3vw;
+  margin-bottom: 20px;
+}
+.hero .hero-text p {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.hero .hero-text a {
+  color: #333;
+  font-size: 20px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 2px;
 }
