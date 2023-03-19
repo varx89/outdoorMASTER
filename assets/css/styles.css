@@ -243,16 +243,16 @@ body {
   color: #fbad27;
 }
 
-/*horizontal lin*/
+/*horizontal line*/
 .separator {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
+  margin-top: 20px;
 }
 
 .separator h3 {
-  padding: 0 2rem; /* creates the space */
+  padding: 0 2rem;
   color: #04aa6d;
 }
 
@@ -265,4 +265,64 @@ body {
   flex: 1;
   height: 2px;
   background-image: linear-gradient(to right, #04aa6d, #fbad27);
+}
+
+/* grid items reduceri */
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 40px 20px 40px;
+}
+.shop-grid-element {
+  justify-content: center;
+}
+.shop-items-box {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.shop-items-box:hover {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.1);
+}
+
+.shop-item-img {
+  width: 80%;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.shop-item-text {
+  text-align: center;
+  margin: 10px 14px 4px 14px;
+  font-weight: bold;
+  color: #333;
+  height: 55px;
+}
+.shop-item-price {
+  text-align: center;
+  margin: 20px;
+  font-weight: bold;
+  color: #be3081;
+  font-size: 1.6em;
+}
+.addcart {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.addcart-text {
+  background-color: #2c5f41;
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  padding: 9px 0 9px 0;
+  width: 100%;
+  text-align: center;
 }
