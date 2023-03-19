@@ -1,3 +1,9 @@
+html {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
 body {
   margin: 0;
   overflow-x: hidden;
@@ -272,7 +278,7 @@ body {
 .shop-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 30px;
+  gap: 60px;
   justify-content: center;
   align-items: center;
   margin: 20px 40px 20px 40px;
@@ -284,6 +290,7 @@ body {
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
 }
 .shop-items-box:hover {
   display: flex;
@@ -307,7 +314,7 @@ body {
 }
 .shop-item-price {
   text-align: center;
-  margin: 20px;
+  margin: 0 20px 10px 20px;
   font-weight: bold;
   color: #be3081;
   font-size: 1.6em;
@@ -326,4 +333,46 @@ body {
   padding: 9px 0 9px 0;
   width: 100%;
   text-align: center;
+}
+#icon-reduceri-xl-orange {
+  position: absolute;
+  display: flex;
+  background-color: #fbad27;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 12px;
+  width: 34px;
+  justify-content: center;
+  height: 24px;
+  align-items: center;
+  border-radius: 4px;
+  margin: 20px;
+  opacity: 0.8;
+}
+#icon-reduceri-xl-green {
+  position: absolute;
+  display: flex;
+  background-color: #04aa6d;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 12px;
+  width: 34px;
+  justify-content: center;
+  height: 24px;
+  align-items: center;
+  border-radius: 4px;
+  margin: 20px;
+  opacity: 0.8;
+}
+#icon-pret-vechi-xl {
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  color: gray;
+  justify-content: center;
+  text-decoration: line-through;
+}
+
+/* categorie grid */
+.category-grid {
 }
