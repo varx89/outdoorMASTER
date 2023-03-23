@@ -9,6 +9,7 @@ body {
   overflow-x: hidden;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
+  background-color: white;
 }
 @media screen and (min-width: 320px) and (max-width: 960px) {
   /* smartphones, iPhone, portrait 480x320 phones */
@@ -277,26 +278,32 @@ body {
 /* grid items reduceri */
 .shop-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-flow: row;
+  /* grid-column: 2; */
+
   gap: 60px;
   justify-content: center;
   align-items: center;
   margin: 20px 40px 20px 40px;
 }
-.shop-grid-element {
+.shop-grid-element:nth-child(6) {
   justify-content: center;
+  grid-column: 1;
 }
 .shop-items-box {
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: relative;
+  background-color: whitesmoke;
 }
 .shop-items-box:hover {
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transform: scale(1.1);
+  background-color: whitesmoke;
 }
 
 .shop-item-img {
@@ -317,7 +324,7 @@ body {
   margin: 0 20px 10px 20px;
   font-weight: bold;
   color: #be3081;
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 .addcart {
   display: flex;
@@ -372,7 +379,38 @@ body {
   justify-content: center;
   text-decoration: line-through;
 }
+.category-fill {
+  display: flex;
+  margin-left: 40px;
+}
 
 /* categorie grid */
 .category-grid {
+  background-color: #d0e5dd;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+  grid-template-rows: repeat(auto-fit, minmax(180px, 1fr));
+  /* grid-template-columns: minmax(180px, 1fr) minmax(180px, 1fr) minmax(
+      180px,
+      1fr
+    ); */
+  /* grid-template-columns: 2fr 1fr 1fr; */
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 40px 20px 40px;
+}
+.category-grid-elem {
+  justify-content: center;
+}
+.grid-img {
+  /* box-sizing: border-box;
+  display: block;
+  object-fit: contain; */
+  grid-column: 1 / span 2;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  /* padding: 15px; */
+  /* margin-lrft: 30px; */
 }
