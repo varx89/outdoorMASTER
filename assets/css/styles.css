@@ -242,6 +242,9 @@ body {
   font-size: 14px;
   padding: 9px;
 }
+.cart-text span {
+  color: #fbad27;
+}
 .cart-icon {
   background: #fbad27;
   border: 0;
