@@ -407,6 +407,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  cursor: pointer;
 }
 .addcart-text {
   background-color: #2c5f41;
@@ -523,7 +524,6 @@ body {
   background-color: #e8e3e3;
   margin-left: 40px;
   margin-right: 40px;
-  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -533,4 +533,50 @@ body {
   width: 140px;
   margin: 10px;
   align-self: center;
+}
+
+/* FOOTER */
+.footer-wrapper {
+  background-color: #2c5f41;
+  margin-top: 40px;
+  padding: 20px 0px 20px 0px;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 50px;
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 40px;
+}
+.footer-info a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.footer-link {
+  color: #fbad27;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.anpc {
+  width: 200px;
+}
+.copyright {
+  background-color: #fbad27;
+  color: whitesmoke;
+  font-weight: bold;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.payments {
+  margin-left: 40px;
+}
+.payments > img {
+  width: 50px;
 }
