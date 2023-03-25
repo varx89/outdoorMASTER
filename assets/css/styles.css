@@ -158,6 +158,7 @@ body {
   gap: 14px;
   background-color: #fbad27;
   color: whitesmoke;
+  text-align: center;
 }
 #header-reducere {
   color: rgb(219, 37, 46);
@@ -176,14 +177,21 @@ body {
 #header-contul-meu {
   color: whitesmoke;
   background-color: #2c5f41;
-  margin-left: 20px;
+  margin-right: 20px;
   padding: 6px 12px 6px 6px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 #header-contul-meu span {
   color: whitesmoke;
   background-color: #2c5f41;
-  margin-left: 10px;
+  /* margin-left: 10px; */
+  padding-left: 10px;
   font-size: 0.8em;
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
 }
 #header-contul-meu:hover {
   transform: scale(1.1);
@@ -561,6 +569,9 @@ body {
   color: #fbad27;
   font-weight: bold;
   margin-bottom: 10px;
+}
+.footer-map {
+  text-align: center;
 }
 .anpc {
   width: 200px;
