@@ -244,6 +244,7 @@ body {
 }
 .cart-text span {
   color: #fbad27;
+  cursor: pointer;
 }
 .cart-icon {
   background: #fbad27;
@@ -252,6 +253,51 @@ body {
 }
 .fa-cart-shopping {
   color: whitesmoke;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 30px;
+  border-radius: 4px;
+  padding: 6px;
+}
+
+.dropdown-content div {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  font-size: 0.8em;
+  padding: 4px 4px 4px 4px;
+  align-items: center;
+}
+.dropdown-content span {
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.dropdown-content img {
+  width: 20px;
+}
+.dropdown-content button {
+  background-color: #04aa6d;
+  border: none;
+  color: white;
+  padding: 4px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .wrapper {
