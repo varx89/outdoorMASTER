@@ -196,6 +196,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   width: max-content;
+  font-weight: lighter;
 }
 #header-contul-meu:hover {
   transform: scale(1.1);
@@ -237,14 +238,15 @@ body {
 .cart-text {
   background-color: #2c5f41;
   color: whitesmoke;
-  font-weight: bold;
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  padding: 9px;
+  font-size: 0.9em;
+  padding: 9px 9px 10px 9px;
 }
 .cart-text span {
   color: #fbad27;
   cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 .cart-icon {
   background: #fbad27;
@@ -283,6 +285,9 @@ body {
   padding-left: 10px;
   cursor: pointer;
 }
+.dropdown-content span:hover {
+  font-weight: bold;
+}
 
 .dropdown-content img {
   width: 20px;
@@ -294,6 +299,9 @@ body {
   padding: 4px;
   margin-left: 20px;
   cursor: pointer;
+}
+.dropdown-content button:hover {
+  transform: scale(1.1);
 }
 
 .dropdown:hover .dropdown-content {
@@ -476,7 +484,7 @@ body {
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  padding: 9px 0 9px 0;
+  padding: 9px 0 10px 0;
   width: 100%;
   text-align: center;
 }
