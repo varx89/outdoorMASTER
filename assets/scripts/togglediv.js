@@ -16,19 +16,20 @@ const addToCart = (item) => {
         image: item.dataset.src,
     };
 
-    const outputItemLocalStorage = JSON.parse(getItemLocalStorage('cart'));
-    // console.log(outputItemLocalStorage);
+    const outputItemLocalStorage =
+        JSON.parse(getItemLocalStorage('cart')) ?? [];
+
     const result = outputItemLocalStorage.filter(
-        (x) => x.product === item.dataset.name || []
+        (x) => x.product === item.dataset.name
     );
-    console.log(result);
+
     if (result.length > 0) {
         products = outputItemLocalStorage;
         products.push(cartItem);
     } else {
         products.push(cartItem);
     }
-    console.log(products);
+
     addItemToLocalStorage(products);
 };
 
