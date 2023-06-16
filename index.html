@@ -1,80 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="./assets/css/navbar.css" />
-    <link
-      href="https://unpkg.com/css.gg@2.0.0/icons/css/menu.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="./assets/images/favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-
-    <title>Outdoor MASTER - Maestrul tau in articole outdoor</title>
-  </head>
-  <body>
-    <header>
-      <div id="header-message">
-        <div id="header-reducere">-20% Reducere</div>
-        <div id="header-date">Pana la 15.04.2023</div>
-        <div id="header-contul-meu">
-          <i class="fa-solid fa-user"></i>
-          <a href="#contul-meu"><span>Contul meu</span></a>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="logo">
-          <img src="./assets/images/outdoor-master-logo-main.png" />
-        </div>
-
-        <div class="search">
-          <input
-            class="search-box"
-            type="text"
-            name="search"
-            placeholder="Cauta produsul dorit..."
-          />
-          <button name="search" class="search-button">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
-
-        <div class="dropdown">
-          <div class="cart">
-            <div class="cart-text">Cosul meu: <span>3</span> Produse</div>
-            <div class="cart-icon">
-              <i class="fa-solid fa-cart-shopping"></i>
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/navbar.css" />
+        <link
+            href="https://unpkg.com/css.gg@2.0.0/icons/css/menu.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/images/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/images/favicon/favicon-16x16.png"
+        />
+        <link
+            rel="mask-icon"
+            href="./assets/images/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- Scripts -->
+        <script defer src="./assets/scripts/togglediv.js"></script>
+        <script
+            defer
+            src="https://kit.fontawesome.com/b02dc4859c.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Outdoor MASTER - Maestrul tau in articole outdoor</title>
+    </head>
+    <body>
+        <header>
+            <div id="header-message">
+                <div id="header-reducere">-20% Reducere</div>
+                <div id="header-date">Pana la 15.04.2023</div>
+                <div id="header-contul-meu">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="#contul-meu"><span>Contul meu</span></a>
+                </div>
             </div>
-            <div class="dropdown-content">
-              <div>
+
+            <div class="container">
+                <div class="logo">
+                    <img src="./assets/images/outdoor-master-logo-main.png" />
+                </div>
+
+                <div class="search">
+                    <input
+                        class="search-box"
+                        type="text"
+                        name="search"
+                        placeholder="Cauta produsul dorit..."
+                    />
+                    <button name="search" class="search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+                <div class="dropdown">
+                    <div class="cart">
+                        <div class="cart-text">
+                            Cosul meu:
+                            <span class="cart-counter"></span> Produse
+                        </div>
+                        <div class="cart-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <!-- <div>
                 <img src="./assets/images/items-cart/rh17n_side.jpg" /><span
                   >Casca schi Relax Wild RH17N</span
                 >
@@ -92,648 +100,702 @@
               <div>
                 <a href="#cosul-meu"><button>Cosul meu</button></a>
                 <a href="#plateste"><button>Plateste</button></a>
-              </div>
+              </div> -->
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="topnav" id="myTopnav">
-        <a href="#home" class="active"><i class="fa-solid fa-house"></i></a>
-        <a href="#imbracaminte">Imbracaminte</a>
-        <a href="#incaltaminte">Incaltaminte</a>
-        <a href="#camping-drumetii">Camping si drumetii</a>
-        <a href="#sporturi-de-iarna">Sporturi de iarna</a>
-        <a href="#alpinism">Alpinism</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa-solid fa-bars"></i>
-        </a>
-      </div>
-    </header>
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active"
+                    ><i class="fa-solid fa-house"></i
+                ></a>
+                <a href="#imbracaminte">Imbracaminte</a>
+                <a href="#incaltaminte">Incaltaminte</a>
+                <a href="#camping-drumetii">Camping si drumetii</a>
+                <a href="#sporturi-de-iarna">Sporturi de iarna</a>
+                <a href="#alpinism">Alpinism</a>
+                <a
+                    href="javascript:void(0);"
+                    class="icon"
+                    onclick="myFunction()"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+        </header>
 
-    <section class="container">
-      <div class="before-hero-1">
-        <a href="#noutati">Noutati</a>
-        <a href="#promotii">Promotii</a>
-      </div>
-      <!-- <div id="before-hero-gap">|</div> -->
-      <div class="before-hero-2">
-        <a href="#top-vanzari">Top Vanzari</a>
-        <a href="#20-extra">-20% Extra</a>
-      </div>
-      <!-- <div id="before-hero-gap">|</div> -->
-      <div class="before-hero-3">
-        <a href="#voucher">Vouchere</a>
-      </div>
-    </section>
+        <section class="container">
+            <div class="before-hero-1">
+                <a href="#noutati">Noutati</a>
+                <a href="#promotii">Promotii</a>
+            </div>
+            <!-- <div id="before-hero-gap">|</div> -->
+            <div class="before-hero-2">
+                <a href="#top-vanzari">Top Vanzari</a>
+                <a href="#20-extra">-20% Extra</a>
+            </div>
+            <!-- <div id="before-hero-gap">|</div> -->
+            <div class="before-hero-3">
+                <a href="#voucher">Vouchere</a>
+            </div>
+        </section>
 
-    <section>
-      <div class="hero">
-        <img src="./assets/images/tents-hero-1.jpeg" />
-        <div class="hero-text">
-          <h1>Descopera colectia de corturi COLEMAN 2023</h1>
-          <p>-20% reducere la toata colectia</p>
-          <a href="#exploreaza">Exploreaza Colectia</a>
-        </div>
-      </div>
-    </section>
-    <!-- sectiune reduceri -->
-    <section id="reduceri">
-      <div class="separator">
-        <div class="line-before"></div>
-        <h3>
-          <i class="fa-solid fa-tags"></i>
-          Reduceri
-          <i class="fa-solid fa-tags fa-flip-horizontal"></i>
-        </h3>
-        <div class="line-after"></div>
-      </div>
+        <section>
+            <div class="hero">
+                <img src="./assets/images/tents-hero-1.jpeg" />
+                <div class="hero-text">
+                    <h1>Descopera colectia de corturi COLEMAN 2023</h1>
+                    <p>-20% reducere la toata colectia</p>
+                    <a href="#exploreaza">Exploreaza Colectia</a>
+                </div>
+            </div>
+        </section>
+        <!-- sectiune reduceri -->
+        <section id="reduceri">
+            <div class="separator">
+                <div class="line-before"></div>
+                <h3>
+                    <i class="fa-solid fa-tags"></i>
+                    Reduceri
+                    <i class="fa-solid fa-tags fa-flip-horizontal"></i>
+                </h3>
+                <div class="line-after"></div>
+            </div>
 
-      <div class="shop-grid">
-        <div class="shop-grid-element">
-          <div class="shop-items-box">
-            <div id="icon-reduceri-xl-orange">-20%</div>
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/4462_crystal_rose_red.jpg"
-            />
-            <div class="shop-item-text">
-              Pantaloni Warmpeace Crystal Lady - Rose Red
-            </div>
-            <div id="icon-pret-vechi-xl">304<sup>.00 lei</sup></div>
-            <div class="shop-item-price">253<sup>.50 lei</sup></div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="shop-grid-element">
-          <div class="shop-items-box">
-            <div id="icon-reduceri-xl-orange">-20%</div>
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/rescuer-25-pro_4_.jpg"
-            />
-            <div class="shop-item-text">Rucsac Arva Rescuer Pro 25L Negru</div>
-            <div id="icon-pret-vechi-xl">450<sup>.00 lei</sup></div>
-            <div class="shop-item-price">375<sup>.00 lei</sup></div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="shop-grid-element">
-          <div class="shop-items-box">
-            <div id="icon-reduceri-xl-orange">-20%</div>
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/rh17n_side.jpg"
-            />
-            <div class="shop-item-text">Casca schi Relax Wild RH17N</div>
-            <div id="icon-pret-vechi-xl">286<sup>.50 lei</sup></div>
-            <div class="shop-item-price">239<sup>.00 lei</sup></div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="shop-grid-element">
-          <div class="shop-items-box">
-            <div id="icon-reduceri-xl-orange">-20%</div>
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/rucsac_arva_tour_25l_-_petrol_blue.jpg"
-            />
-            <div class="shop-item-text">Rucsac Arva TOUR Petrol Blue</div>
-            <div id="icon-pret-vechi-xl">348<sup>.50 lei</sup></div>
-            <div class="shop-item-price">290<sup>.50 lei</sup></div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="shop-grid-element">
-          <div class="shop-items-box">
-            <div id="icon-reduceri-xl-orange">-20%</div>
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/set-vase-camping-4-pise-din-otel-inoxidabil-mfh.jpg"
-            />
-            <div class="shop-item-text">Set vase camping 4 piese inox</div>
-            <div id="icon-pret-vechi-xl">145<sup>.50 lei</sup></div>
-            <div class="shop-item-price">120<sup>.50 lei</sup></div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="shop-grid-element">
-          <div class="shop-items-box">
-            <div id="icon-reduceri-xl-orange">-20%</div>
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/scaun-pliabil-pinguin-green.jpg"
-            />
-            <div class="shop-item-text">Scaun pliabil Pinguin</div>
-            <div id="icon-pret-vechi-xl">190<sup>.00 lei</sup></div>
-            <div class="shop-item-price">169<sup>.00 lei</sup></div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="shop-grid-element">
-          <div class="shop-items-box">
-            <div id="icon-reduceri-xl-orange">-20%</div>
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/cort-coleman-darwin-4.jpg"
-            />
-            <div class="shop-item-text">Cort Coleman Darwin 4+</div>
-            <div id="icon-pret-vechi-xl">930<sup>.00 lei</sup></div>
-            <div class="shop-item-price">849<sup>.00 lei</sup></div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="shop-grid-element">
-          <div class="shop-items-box">
-            <div id="icon-reduceri-xl-orange">-20%</div>
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/bocanci-unisex-lomer-badia-high-mtx-impermeabili.jpg"
-            />
-            <div class="shop-item-text">
-              Bocanci unisex Lomer Badia High MTX
-            </div>
-            <div id="icon-pret-vechi-xl">980<sup>.50 lei</sup></div>
-            <div class="shop-item-price">880<sup>.00 lei</sup></div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
+            <div class="shop-grid">
+                <div class="shop-grid-element">
+                    <div class="shop-items-box">
+                        <div id="icon-reduceri-xl-orange">-20%</div>
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/4462_crystal_rose_red.jpg"
+                        />
+                        <div class="shop-item-text">
+                            Pantaloni Warmpeace Crystal Lady - Rose Red
+                        </div>
+                        <div id="icon-pret-vechi-xl">304<sup>.00 lei</sup></div>
+                        <div class="shop-item-price">253<sup>.50 lei</sup></div>
+                        <div class="addcart">
+                            <div
+                                class="addcart-text"
+                                data-name="Pantaloni Warmpeace Crystal Lady - Rose Red"
+                                data-src="./assets/images/items-cart/4462_crystal_rose_red.jpg"
+                                onclick="addToCart(this)"
+                            >
+                                Adauga in cos
+                            </div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-grid-element">
+                    <div class="shop-items-box">
+                        <div id="icon-reduceri-xl-orange">-20%</div>
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/rescuer-25-pro_4_.jpg"
+                        />
+                        <div class="shop-item-text">
+                            Rucsac Arva Rescuer Pro 25L Negru
+                        </div>
+                        <div id="icon-pret-vechi-xl">450<sup>.00 lei</sup></div>
+                        <div class="shop-item-price">375<sup>.00 lei</sup></div>
+                        <div class="addcart">
+                            <div
+                                class="addcart-text"
+                                data-name="Rucsac Arva Rescuer Pro 25L Negru"
+                                data-src="./assets/images/items-cart/rescuer-25-pro_4_.jpg"
+                                onclick="addToCart(this)"
+                            >
+                                Adauga in cos
+                            </div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-grid-element">
+                    <div class="shop-items-box">
+                        <div id="icon-reduceri-xl-orange">-20%</div>
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/rh17n_side.jpg"
+                        />
+                        <div class="shop-item-text">
+                            Casca schi Relax Wild RH17N
+                        </div>
+                        <div id="icon-pret-vechi-xl">286<sup>.50 lei</sup></div>
+                        <div class="shop-item-price">239<sup>.00 lei</sup></div>
+                        <div class="addcart">
+                            <div class="addcart-text">Adauga in cos</div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-grid-element">
+                    <div class="shop-items-box">
+                        <div id="icon-reduceri-xl-orange">-20%</div>
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/rucsac_arva_tour_25l_-_petrol_blue.jpg"
+                        />
+                        <div class="shop-item-text">
+                            Rucsac Arva TOUR Petrol Blue
+                        </div>
+                        <div id="icon-pret-vechi-xl">348<sup>.50 lei</sup></div>
+                        <div class="shop-item-price">290<sup>.50 lei</sup></div>
+                        <div class="addcart">
+                            <div class="addcart-text">Adauga in cos</div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-grid-element">
+                    <div class="shop-items-box">
+                        <div id="icon-reduceri-xl-orange">-20%</div>
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/set-vase-camping-4-pise-din-otel-inoxidabil-mfh.jpg"
+                        />
+                        <div class="shop-item-text">
+                            Set vase camping 4 piese inox
+                        </div>
+                        <div id="icon-pret-vechi-xl">145<sup>.50 lei</sup></div>
+                        <div class="shop-item-price">120<sup>.50 lei</sup></div>
+                        <div class="addcart">
+                            <div class="addcart-text" onclick="alert('hello')">
+                                Adauga in cos
+                            </div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-grid-element">
+                    <div class="shop-items-box">
+                        <div id="icon-reduceri-xl-orange">-20%</div>
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/scaun-pliabil-pinguin-green.jpg"
+                        />
+                        <div class="shop-item-text">Scaun pliabil Pinguin</div>
+                        <div id="icon-pret-vechi-xl">190<sup>.00 lei</sup></div>
+                        <div class="shop-item-price">169<sup>.00 lei</sup></div>
+                        <div class="addcart">
+                            <div class="addcart-text">Adauga in cos</div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-grid-element">
+                    <div class="shop-items-box">
+                        <div id="icon-reduceri-xl-orange">-20%</div>
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/cort-coleman-darwin-4.jpg"
+                        />
+                        <div class="shop-item-text">Cort Coleman Darwin 4+</div>
+                        <div id="icon-pret-vechi-xl">930<sup>.00 lei</sup></div>
+                        <div class="shop-item-price">849<sup>.00 lei</sup></div>
+                        <div class="addcart">
+                            <div class="addcart-text">Adauga in cos</div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-grid-element">
+                    <div class="shop-items-box">
+                        <div id="icon-reduceri-xl-orange">-20%</div>
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/bocanci-unisex-lomer-badia-high-mtx-impermeabili.jpg"
+                        />
+                        <div class="shop-item-text">
+                            Bocanci unisex Lomer Badia High MTX
+                        </div>
+                        <div id="icon-pret-vechi-xl">980<sup>.50 lei</sup></div>
+                        <div class="shop-item-price">880<sup>.00 lei</sup></div>
+                        <div class="addcart">
+                            <div class="addcart-text">Adauga in cos</div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="shop-grid-element">
-          <div class="shop-items-box">
-            <div id="icon-reduceri-xl-orange">-20%</div>
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/ochelari-de-soare-polarizati-relax-gaga-r5394k-cu-husa.jpg"
-            />
-            <div class="shop-item-text">
-              Ochelari de soare polarizati Relax Gaga
-            </div>
-            <div id="icon-pret-vechi-xl">230<sup>.50 lei</sup></div>
-            <div class="shop-item-price">192<sup>.50 lei</sup></div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
+                <div class="shop-grid-element">
+                    <div class="shop-items-box">
+                        <div id="icon-reduceri-xl-orange">-20%</div>
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/ochelari-de-soare-polarizati-relax-gaga-r5394k-cu-husa.jpg"
+                        />
+                        <div class="shop-item-text">
+                            Ochelari de soare polarizati Relax Gaga
+                        </div>
+                        <div id="icon-pret-vechi-xl">230<sup>.50 lei</sup></div>
+                        <div class="shop-item-price">192<sup>.50 lei</sup></div>
+                        <div class="addcart">
+                            <div class="addcart-text">Adauga in cos</div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="shop-grid-element">
-          <div class="shop-items-box">
-            <div id="icon-reduceri-xl-orange">-20%</div>
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/jacheta-barbati-montane-featherlite-smock-moroccan-blue.jpg"
-            />
-            <div class="shop-item-text">
-              Jacheta barbati Montane Featherlite Smock
+                <div class="shop-grid-element">
+                    <div class="shop-items-box">
+                        <div id="icon-reduceri-xl-orange">-20%</div>
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/jacheta-barbati-montane-featherlite-smock-moroccan-blue.jpg"
+                        />
+                        <div class="shop-item-text">
+                            Jacheta barbati Montane Featherlite Smock
+                        </div>
+                        <div id="icon-pret-vechi-xl">420<sup>.50 lei</sup></div>
+                        <div class="shop-item-price">373<sup>.50 lei</sup></div>
+                        <div class="addcart">
+                            <div class="addcart-text">Adauga in cos</div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="icon-pret-vechi-xl">420<sup>.50 lei</sup></div>
-            <div class="shop-item-price">373<sup>.50 lei</sup></div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- sectiune ofertele lunii -->
+        <!-- sectiune ofertele lunii -->
 
-    <section id="ofertele-lunii">
-      <div class="category-grid">
-        <img
-          class="grid-img"
-          src="./assets/images/category-cart/rucsace-oferta-lunii.jpg"
-        />
+        <section id="ofertele-lunii">
+            <div class="category-grid">
+                <img
+                    class="grid-img"
+                    src="./assets/images/category-cart/rucsace-oferta-lunii.jpg"
+                />
 
-        <div class="category-grid-element">
-          <div class="shop-items-box">
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/rucsac_arva_tour_25l_-_petrol_blue.jpg"
-            />
-            <div class="shop-item-text">Rucsac Arva TOUR Petrol Blue</div>
-            <div class="shop-item-price">
-              <span>290<sup>.50 lei</sup></span>
-            </div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="category-grid-element">
-          <div class="shop-items-box">
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/rucsac-mammut-lithium-crest-s-307-litri-galaxy-black.jpg"
-            />
-            <div class="shop-item-text">Rucsac Mammut Lithium 30 L galaxy</div>
-            <div class="shop-item-price">
-              <span>630<sup>.50 lei</sup></span>
-            </div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
+                <div class="category-grid-element">
+                    <div class="shop-items-box">
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/rucsac_arva_tour_25l_-_petrol_blue.jpg"
+                        />
+                        <div class="shop-item-text">
+                            Rucsac Arva TOUR Petrol Blue
+                        </div>
+                        <div class="shop-item-price">
+                            <span>290<sup>.50 lei</sup></span>
+                        </div>
+                        <div class="addcart">
+                            <div class="addcart-text">Adauga in cos</div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-grid-element">
+                    <div class="shop-items-box">
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/rucsac-mammut-lithium-crest-s-307-litri-galaxy-black.jpg"
+                        />
+                        <div class="shop-item-text">
+                            Rucsac Mammut Lithium 30 L galaxy
+                        </div>
+                        <div class="shop-item-price">
+                            <span>630<sup>.50 lei</sup></span>
+                        </div>
+                        <div class="addcart">
+                            <div class="addcart-text">Adauga in cos</div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="category-grid-element">
-          <div class="shop-items-box">
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/rucsac-drumetie-42-litri-pinguin-trail-cu-husa-de-ploaie-si-fluier-de-urgenta.jpg"
-            />
-            <div class="shop-item-text">
-              Rucsac drumetie 42 litri Pinguin Trail
-            </div>
-            <div class="shop-item-price">
-              <span>492<sup>.00 lei</sup></span>
-            </div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
+                <div class="category-grid-element">
+                    <div class="shop-items-box">
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/rucsac-drumetie-42-litri-pinguin-trail-cu-husa-de-ploaie-si-fluier-de-urgenta.jpg"
+                        />
+                        <div class="shop-item-text">
+                            Rucsac drumetie 42 litri Pinguin Trail
+                        </div>
+                        <div class="shop-item-price">
+                            <span>492<sup>.00 lei</sup></span>
+                        </div>
+                        <div class="addcart">
+                            <div class="addcart-text">Adauga in cos</div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="category-grid-element">
-          <div class="shop-items-box">
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/rucsac-drumetie-35-litri-pinguin-vector-cu-husa-de-ploaie-si-fluier-de-urgenta.jpg"
-            />
-            <div class="shop-item-text">
-              Rucsac drumetie 35 litri Pinguin Vector
+                <div class="category-grid-element">
+                    <div class="shop-items-box">
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/rucsac-drumetie-35-litri-pinguin-vector-cu-husa-de-ploaie-si-fluier-de-urgenta.jpg"
+                        />
+                        <div class="shop-item-text">
+                            Rucsac drumetie 35 litri Pinguin Vector
+                        </div>
+                        <div class="shop-item-price">
+                            <span>530<sup>.00 lei</sup></span>
+                        </div>
+                        <div class="addcart">
+                            <div class="addcart-text">Adauga in cos</div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="shop-item-price">
-              <span>530<sup>.00 lei</sup></span>
-            </div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- sectiune produse noi -->
-    <section id="produse-noi">
-      <div class="separator">
-        <div class="line-before"></div>
-        <h3>
-          <i class="fa-solid fa-mountain-sun"></i>
-          Produse Noi
-          <i class="fa-solid fa-mountain-sun fa-flip-horizontal"></i>
-        </h3>
-        <div class="line-after"></div>
-      </div>
+        <!-- sectiune produse noi -->
+        <section id="produse-noi">
+            <div class="separator">
+                <div class="line-before"></div>
+                <h3>
+                    <i class="fa-solid fa-mountain-sun"></i>
+                    Produse Noi
+                    <i class="fa-solid fa-mountain-sun fa-flip-horizontal"></i>
+                </h3>
+                <div class="line-after"></div>
+            </div>
 
-      <div class="shop-grid">
-        <div class="shop-grid-element">
-          <div class="shop-items-box">
-            <div id="icon-reduceri-xl-green">Nou</div>
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/1017783_3q_pdp.jpg"
-            />
-            <div class="shop-item-text">
-              Ghete drumetie Keen Targhee III WP M - Bungee cord / Black
-            </div>
-            <div class="shop-item-price">498<sup>.00 lei</sup></div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="shop-grid-element">
-          <div class="shop-items-box">
-            <div id="icon-reduceri-xl-green">Nou</div>
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/rescuer-25-pro_4_.jpg"
-            />
-            <div class="shop-item-text">
-              Rucsac Arva Rescuer Pro 25 L - Negru
-            </div>
-            <div class="shop-item-price">375<sup>.00 lei</sup></div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="shop-grid-element">
-          <div class="shop-items-box">
-            <div id="icon-reduceri-xl-green">Nou</div>
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/rh17n_side.jpg"
-            />
-            <div class="shop-item-text">Casca schi Relax Wild RH17N</div>
-            <div class="shop-item-price">239<sup>.99 lei</sup></div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="shop-grid-element">
-          <div class="shop-items-box">
-            <div id="icon-reduceri-xl-green">Nou</div>
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/rucsac_arva_tour_25l_-_petrol_blue.jpg"
-            />
-            <div class="shop-item-text">Rucsac Arva TOUR Petrol Blue</div>
-            <div class="shop-item-price">
-              <span>290<sup>.50 lei</sup></span>
-            </div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
+            <div class="shop-grid">
+                <div class="shop-grid-element">
+                    <div class="shop-items-box">
+                        <div id="icon-reduceri-xl-green">Nou</div>
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/1017783_3q_pdp.jpg"
+                        />
+                        <div class="shop-item-text">
+                            Ghete drumetie Keen Targhee III WP M - Bungee cord /
+                            Black
+                        </div>
+                        <div class="shop-item-price">498<sup>.00 lei</sup></div>
+                        <div class="addcart">
+                            <div class="addcart-text">Adauga in cos</div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-grid-element">
+                    <div class="shop-items-box">
+                        <div id="icon-reduceri-xl-green">Nou</div>
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/rescuer-25-pro_4_.jpg"
+                        />
+                        <div class="shop-item-text">
+                            Rucsac Arva Rescuer Pro 25 L - Negru
+                        </div>
+                        <div class="shop-item-price">375<sup>.00 lei</sup></div>
+                        <div class="addcart">
+                            <div class="addcart-text">Adauga in cos</div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-grid-element">
+                    <div class="shop-items-box">
+                        <div id="icon-reduceri-xl-green">Nou</div>
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/rh17n_side.jpg"
+                        />
+                        <div class="shop-item-text">
+                            Casca schi Relax Wild RH17N
+                        </div>
+                        <div class="shop-item-price">239<sup>.99 lei</sup></div>
+                        <div class="addcart">
+                            <div class="addcart-text">Adauga in cos</div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-grid-element">
+                    <div class="shop-items-box">
+                        <div id="icon-reduceri-xl-green">Nou</div>
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/rucsac_arva_tour_25l_-_petrol_blue.jpg"
+                        />
+                        <div class="shop-item-text">
+                            Rucsac Arva TOUR Petrol Blue
+                        </div>
+                        <div class="shop-item-price">
+                            <span>290<sup>.50 lei</sup></span>
+                        </div>
+                        <div class="addcart">
+                            <div class="addcart-text">Adauga in cos</div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="shop-grid-element">
-          <div class="shop-items-box">
-            <div id="icon-reduceri-xl-green">Nou</div>
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/saltea-autogonflabila-pinguin-sherpa-30-nx-186-x-55-x-3-cm-verde.jpg"
-            />
-            <div class="shop-item-text">
-              Saltea autogonflabila Pinguin Sherpa 30 NX
+                <div class="shop-grid-element">
+                    <div class="shop-items-box">
+                        <div id="icon-reduceri-xl-green">Nou</div>
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/saltea-autogonflabila-pinguin-sherpa-30-nx-186-x-55-x-3-cm-verde.jpg"
+                        />
+                        <div class="shop-item-text">
+                            Saltea autogonflabila Pinguin Sherpa 30 NX
+                        </div>
+                        <div class="shop-item-price">
+                            <span>253<sup>.00 lei</sup></span>
+                        </div>
+                        <div class="addcart">
+                            <div class="addcart-text">Adauga in cos</div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-grid-element">
+                    <div class="shop-items-box">
+                        <div id="icon-reduceri-xl-green">Nou</div>
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/sac-de-dormit-pinguin-savana-pfm-5-0-15-c-13-kg-verde.jpg"
+                        />
+                        <div class="shop-item-text">
+                            Sac de dormit Pinguin Savana PFM, +5/ 0 /-15 C
+                        </div>
+                        <div class="shop-item-price">
+                            <span>330<sup>.00 lei</sup></span>
+                        </div>
+                        <div class="addcart">
+                            <div class="addcart-text">Adauga in cos</div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-grid-element">
+                    <div class="shop-items-box">
+                        <div id="icon-reduceri-xl-green">Nou</div>
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/termos-stanley-19-litri-green.jpg"
+                        />
+                        <div class="shop-item-text">
+                            Termos Stanley 2.3 litri negru
+                        </div>
+                        <div class="shop-item-price">
+                            <span>226<sup>.00 lei</sup></span>
+                        </div>
+                        <div class="addcart">
+                            <div class="addcart-text">Adauga in cos</div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-grid-element">
+                    <div class="shop-items-box">
+                        <div id="icon-reduceri-xl-green">Nou</div>
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/bocanci-piele-unisex-brutting-mount-bona-classic.jpg"
+                        />
+                        <div class="shop-item-text">
+                            Bocanci piele unisex Brutting Mount Bona Vibram
+                        </div>
+                        <div class="shop-item-price">
+                            <span>538<sup>.00 lei</sup></span>
+                        </div>
+                        <div class="addcart">
+                            <div class="addcart-text">Adauga in cos</div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-grid-element">
+                    <div class="shop-items-box">
+                        <div id="icon-reduceri-xl-green">Nou</div>
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/bocanci-munte-dama-lomer-sesia-ultra-mtx-lady-albastri.jpg"
+                        />
+                        <div class="shop-item-text">
+                            Bocanci munte dama Lomer Sesia Ultra MTX
+                        </div>
+                        <div class="shop-item-price">
+                            <span>529<sup>.00 lei</sup></span>
+                        </div>
+                        <div class="addcart">
+                            <div class="addcart-text">Adauga in cos</div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-grid-element">
+                    <div class="shop-items-box">
+                        <div id="icon-reduceri-xl-green">Nou</div>
+                        <img
+                            class="shop-item-img"
+                            src="./assets/images/items-cart/cort-coleman-rocky-mountain-5.jpg"
+                        />
+                        <div class="shop-item-text">
+                            Cort Coleman Rocky Mountain 5
+                        </div>
+                        <div class="shop-item-price">
+                            <span>2799<sup>.00 lei</sup></span>
+                        </div>
+                        <div class="addcart">
+                            <div class="addcart-text">Adauga in cos</div>
+                            <div class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="shop-item-price">
-              <span>253<sup>.00 lei</sup></span>
-            </div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="shop-grid-element">
-          <div class="shop-items-box">
-            <div id="icon-reduceri-xl-green">Nou</div>
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/sac-de-dormit-pinguin-savana-pfm-5-0-15-c-13-kg-verde.jpg"
-            />
-            <div class="shop-item-text">
-              Sac de dormit Pinguin Savana PFM, +5/ 0 /-15 C
-            </div>
-            <div class="shop-item-price">
-              <span>330<sup>.00 lei</sup></span>
-            </div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="shop-grid-element">
-          <div class="shop-items-box">
-            <div id="icon-reduceri-xl-green">Nou</div>
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/termos-stanley-19-litri-green.jpg"
-            />
-            <div class="shop-item-text">Termos Stanley 2.3 litri negru</div>
-            <div class="shop-item-price">
-              <span>226<sup>.00 lei</sup></span>
-            </div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="shop-grid-element">
-          <div class="shop-items-box">
-            <div id="icon-reduceri-xl-green">Nou</div>
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/bocanci-piele-unisex-brutting-mount-bona-classic.jpg"
-            />
-            <div class="shop-item-text">
-              Bocanci piele unisex Brutting Mount Bona Vibram
-            </div>
-            <div class="shop-item-price">
-              <span>538<sup>.00 lei</sup></span>
-            </div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="shop-grid-element">
-          <div class="shop-items-box">
-            <div id="icon-reduceri-xl-green">Nou</div>
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/bocanci-munte-dama-lomer-sesia-ultra-mtx-lady-albastri.jpg"
-            />
-            <div class="shop-item-text">
-              Bocanci munte dama Lomer Sesia Ultra MTX
-            </div>
-            <div class="shop-item-price">
-              <span>529<sup>.00 lei</sup></span>
-            </div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="shop-grid-element">
-          <div class="shop-items-box">
-            <div id="icon-reduceri-xl-green">Nou</div>
-            <img
-              class="shop-item-img"
-              src="./assets/images/items-cart/cort-coleman-rocky-mountain-5.jpg"
-            />
-            <div class="shop-item-text">Cort Coleman Rocky Mountain 5</div>
-            <div class="shop-item-price">
-              <span>2799<sup>.00 lei</sup></span>
-            </div>
-            <div class="addcart">
-              <div class="addcart-text">Adauga in cos</div>
-              <div class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- sectiune firme -->
+        <!-- sectiune firme -->
 
-    <section id="firme">
-      <div class="firme-img">
-        <img src="./assets/images/Columbia-logo.png" />
-        <img src="./assets/images/coleman.png" />
-        <img src="./assets/images/arva2339.png" />
-        <img src="./assets/images/Adidas_Logo.svg.png" />
-        <img src="./assets/images/Karrimor-logo-3D19B5302A-seeklogo.com.png" />
-        <img src="./assets/images/Jack-Wolfskin-300x212.png" />
-        <img src="./assets/images/thenorthface.png" />
-        <img src="./assets/images/Vango_logo.svg.png" />
-      </div>
-    </section>
+        <section id="firme">
+            <div class="firme-img">
+                <img src="./assets/images/Columbia-logo.png" />
+                <img src="./assets/images/coleman.png" />
+                <img src="./assets/images/arva2339.png" />
+                <img src="./assets/images/Adidas_Logo.svg.png" />
+                <img
+                    src="./assets/images/Karrimor-logo-3D19B5302A-seeklogo.com.png"
+                />
+                <img src="./assets/images/Jack-Wolfskin-300x212.png" />
+                <img src="./assets/images/thenorthface.png" />
+                <img src="./assets/images/Vango_logo.svg.png" />
+            </div>
+        </section>
 
-    <footer id="footer">
-      <div class="footer-wrapper">
-        <div class="footer-info">
-          <div class="footer-link">LINK-URI UTILE</div>
-          <a href="#despre"><span>Despre noi</span></a>
-          <a href="#contact"><span>Contact</span></a>
-          <a href="#politica"><span>Politica de confidentialitate</span></a>
-          <a href="#tos"><span>Termeni și condiții</span></a>
-          <a href="#cumpar"><span>Cum cumpar?</span></a>
-          <a href="#platesc"><span>Cum platesc?</span></a>
-          <a href="#livrare"><span>Livrare produse</span></a>
-          <a href="#garantie"><span>Garanție produse</span></a>
-          <a href="#returnare"><span>Condiții de returnare</span></a>
-        </div>
-        <div class="footer-info">
-          <div class="footer-link">MAGAZIN OUTDOOR MASTER</div>
-          <span>ARAD, ARAD</span>
-          <span>str. Nelu Aristide Dragomir, nr. 4 (BCR)</span>
-          <span>Tel: 0723 255 255 / 0257 411 959</span>
-          <span>Program: Luni - Sambata 10:00 - 18:00</span>
-          <span
-            ><a href="mailto:contact@outdoormaster.ro"
-              >contact@outdoormaster.ro</a
-            ></span
-          >
-          <div><img class="anpc" src="./assets/images/anpc-1.webp" /></div>
-          <div><img class="anpc" src="./assets/images/anpc-2.webp" /></div>
-        </div>
-        <div>
-          <div class="footer-link footer-map">UNDE NE GASITI</div>
-          <iframe
-            width="380"
-            height="350"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=21.305279731750492%2C46.17184406531159%2C21.315321922302246%2C46.176740016433456&amp;layer=mapnik"
-            style="border: 1px solid black"
-          ></iframe>
-        </div>
-      </div>
-      <div class="copyright">
-        <span>
-          S.C. Outdoor Master SRL © 2023. Toate drepturile rezervate.
-        </span>
+        <footer id="footer">
+            <div class="footer-wrapper">
+                <div class="footer-info">
+                    <div class="footer-link">LINK-URI UTILE</div>
+                    <a href="#despre"><span>Despre noi</span></a>
+                    <a href="#contact"><span>Contact</span></a>
+                    <a href="#politica"
+                        ><span>Politica de confidentialitate</span></a
+                    >
+                    <a href="#tos"><span>Termeni și condiții</span></a>
+                    <a href="#cumpar"><span>Cum cumpar?</span></a>
+                    <a href="#platesc"><span>Cum platesc?</span></a>
+                    <a href="#livrare"><span>Livrare produse</span></a>
+                    <a href="#garantie"><span>Garanție produse</span></a>
+                    <a href="#returnare"><span>Condiții de returnare</span></a>
+                </div>
+                <div class="footer-info">
+                    <div class="footer-link">MAGAZIN OUTDOOR MASTER</div>
+                    <span>ARAD, ARAD</span>
+                    <span>str. Nelu Aristide Dragomir, nr. 4 (BCR)</span>
+                    <span>Tel: 0723 255 255 / 0257 411 959</span>
+                    <span>Program: Luni - Sambata 10:00 - 18:00</span>
+                    <span
+                        ><a href="mailto:contact@outdoormaster.ro"
+                            >contact@outdoormaster.ro</a
+                        ></span
+                    >
+                    <div>
+                        <img class="anpc" src="./assets/images/anpc-1.webp" />
+                    </div>
+                    <div>
+                        <img class="anpc" src="./assets/images/anpc-2.webp" />
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-link footer-map">UNDE NE GASITI</div>
+                    <iframe
+                        width="380"
+                        height="350"
+                        frameborder="0"
+                        scrolling="no"
+                        marginheight="0"
+                        marginwidth="0"
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=21.305279731750492%2C46.17184406531159%2C21.315321922302246%2C46.176740016433456&amp;layer=mapnik"
+                        style="border: 1px solid black"
+                    ></iframe>
+                </div>
+            </div>
+            <div class="copyright">
+                <span>
+                    S.C. Outdoor Master SRL © 2023. Toate drepturile rezervate.
+                </span>
 
-        <div class="payments">
-          <img src="./assets/images/payment-icons/MasterCard-light.png" />
-          <img src="./assets/images/payment-icons/Visa-card-light.png" />
-          <img src="./assets/images/payment-icons/Maestro-card-light.png" />
-          <img src="./assets/images/payment-icons/Cirrus-card-light.png" />
-          <img src="./assets/images/payment-icons/Apple-card-light.png" />
-          <img
-            src="./assets/images/payment-icons/GoogleWallet-card-light.png"
-          />
-        </div>
-      </div>
-    </footer>
-    <!-- scroll to top -->
-    <section id="scroll">
-      <a id="scroll-href" href="#header-message">
-        <div id="scroll-to-top">
-          <i class="fa-solid fa-person-hiking"></i>
-        </div>
-      </a>
-    </section>
-
-    <!-- Scripts -->
-    <script src="./assets/scripts/togglediv.js"></script>
-    <script
-      src="https://kit.fontawesome.com/b02dc4859c.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+                <div class="payments">
+                    <img
+                        src="./assets/images/payment-icons/MasterCard-light.png"
+                    />
+                    <img
+                        src="./assets/images/payment-icons/Visa-card-light.png"
+                    />
+                    <img
+                        src="./assets/images/payment-icons/Maestro-card-light.png"
+                    />
+                    <img
+                        src="./assets/images/payment-icons/Cirrus-card-light.png"
+                    />
+                    <img
+                        src="./assets/images/payment-icons/Apple-card-light.png"
+                    />
+                    <img
+                        src="./assets/images/payment-icons/GoogleWallet-card-light.png"
+                    />
+                </div>
+            </div>
+        </footer>
+        <!-- scroll to top -->
+        <section id="scroll">
+            <a id="scroll-href" href="#header-message">
+                <div id="scroll-to-top">
+                    <i class="fa-solid fa-person-hiking"></i>
+                </div>
+            </a>
+        </section>
+    </body>
 </html>
