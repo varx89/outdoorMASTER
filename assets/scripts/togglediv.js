@@ -10,22 +10,99 @@ const myFunction = () => {
 
 //add to localStorage
 let products = [];
+
+const render = (cart) => {
+    const dropdownContent =
+        document.getElementsByClassName('dropdown-content')[0];
+
+    const cartCounter = document.getElementsByClassName('cart-counter')[0];
+    cartCounter.textContent = countProductsQTY();
+
+    for (item of cart) {
+        const elementDiv = document.createElement('div');
+
+        const elementImg = document.createElement('img');
+        elementImg.setAttribute('src', item.image);
+        elementImg.setAttribute('alt', item.product);
+
+        const elementSpan = document.createElement('span');
+        elementSpan.textContent = `${item.qty} x ${item.product}`;
+        elementDiv.append(elementImg, elementSpan);
+        dropdownContent.appendChild(elementDiv);
+    }
+
+    //div cartpay buttons
+    const cartDiv = document.createElement('div');
+    cartDiv.setAttribute('class', 'pay-buttons-maxcontent');
+
+    // a link with button mycart
+    const aCart = document.createElement('a');
+    aCart.setAttribute('href', '#cosul-meu');
+
+    const myCartButton = document.createElement('button');
+    myCartButton.textContent = 'Cosul meu';
+
+    // a link with button pay
+    const aPay = document.createElement('a');
+    aPay.setAttribute('href', '#plateste');
+
+    const payButton = document.createElement('button');
+    payButton.textContent = 'Plateste';
+
+    aPay.appendChild(payButton);
+    aCart.appendChild(myCartButton);
+    cartDiv.append(aPay, aCart);
+
+    dropdownContent.appendChild(cartDiv);
+};
+
+//functions
+
+const clearLocalStorage = () => {
+    localStorage.clear();
+};
+const addItemToLocalStorage = (items) => {
+    localStorage.setItem('cart', JSON.stringify(items));
+    location.reload();
+};
+
+const getItemLocalStorage = (item) => {
+    const output = JSON.parse(localStorage.getItem(item)) ?? [];
+    products = output;
+
+    return products;
+};
+const countProductsQTY = () => {
+    const getDB = getItemLocalStorage('cart');
+    let countQTYs = 0;
+
+    for (let item of getDB) {
+        countQTYs += item.qty;
+    }
+
+    return countQTYs;
+};
+
 const addToCart = (item) => {
     cartItem = {
         product: item.dataset.name,
         image: item.dataset.src,
+        qty: 1,
     };
 
-    const outputItemLocalStorage =
-        JSON.parse(getItemLocalStorage('cart')) ?? [];
+    const outputItemLocalStorage = getItemLocalStorage('cart');
 
     const result = outputItemLocalStorage.filter(
         (x) => x.product === item.dataset.name
     );
+    const resultOther = outputItemLocalStorage.filter(
+        (x) => x.product !== item.dataset.name
+    );
 
     if (result.length > 0) {
-        products = outputItemLocalStorage;
-        products.push(cartItem);
+        result[0].qty++;
+
+        products = resultOther.concat(result);
     } else {
         products.push(cartItem);
     }
@@ -33,51 +110,4 @@ const addToCart = (item) => {
     addItemToLocalStorage(products);
 };
 
-const addItemToLocalStorage = (items) => {
-    localStorage.setItem('cart', JSON.stringify(items));
-    // products = [];
-};
-
-const getItemLocalStorage = (item) => {
-    return localStorage.getItem(item);
-};
-
-const cartCounter = document.getElementsByClassName('cart-counter')[0];
-cartCounter.textContent = 6;
-
-const dropdownContent = document.getElementsByClassName('dropdown-content')[0];
-
-const elementDiv = document.createElement('div');
-
-const elementImg = document.createElement('img');
-elementImg.setAttribute('src', './assets/images/items-cart/rh17n_side.jpg');
-elementImg.setAttribute('alt', 'Casca schi Relax Wild RH17N');
-
-const elementSpan = document.createElement('span');
-elementSpan.textContent = '1 x Casca schi Relax Wild RH17N';
-
-//div cartpay buttons
-const cartDiv = document.createElement('div');
-cartDiv.setAttribute('class', 'pay-buttons-maxcontent');
-
-// a link with button mycart
-const aCart = document.createElement('a');
-aCart.setAttribute('href', '#cosul-meu');
-
-const myCartButton = document.createElement('button');
-myCartButton.textContent = 'Cosul meu';
-
-// a link with button pay
-const aPay = document.createElement('a');
-aPay.setAttribute('href', '#plateste');
-
-const payButton = document.createElement('button');
-payButton.textContent = 'Plateste';
-
-elementDiv.append(elementImg, elementSpan);
-
-aPay.appendChild(payButton);
-aCart.appendChild(myCartButton);
-cartDiv.append(aPay, aCart);
-
-dropdownContent.append(elementDiv, cartDiv);
+render(getItemLocalStorage('cart'));
