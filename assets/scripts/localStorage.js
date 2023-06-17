@@ -60,7 +60,7 @@ const addItemToLocalStorage = (items) => {
 
 const getItemLocalStorage = (item) => {
     const output = JSON.parse(localStorage.getItem(item)) ?? [];
-    products = output;
+    products = [...output];
 
     return products;
 };
@@ -76,7 +76,7 @@ const deleteItemCart = (item) => {
     );
 
     if (result.length > 0) {
-        products = resultOther;
+        products = [...resultOther];
         addItemToLocalStorage(products);
     } else {
         location.reload();
@@ -113,7 +113,7 @@ const addToCart = (item) => {
     if (result.length > 0) {
         result[0].qty++;
 
-        products = resultOther.concat(result);
+        products = [...resultOther].concat(result);
     } else {
         products.push(cartItem);
     }
