@@ -61,7 +61,7 @@ const cartShow = () => {
 
     const cart = document.getElementsByClassName('cart-text')[0];
     cart.addEventListener('click', () => {
-        dropdownContent.style.display = 'none';
+        // dropdownContent.style.display = 'none';
         location.reload();
     });
 };
