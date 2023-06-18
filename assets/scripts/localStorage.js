@@ -53,6 +53,17 @@ const render = (cart) => {
 };
 
 //functions
+
+const cartShow = () => {
+    const dropdownContent =
+        document.getElementsByClassName('dropdown-content')[0];
+    dropdownContent.style.display = 'block';
+
+    dropdownContent.addEventListener('mouseleave', () => {
+        dropdownContent.style.display = 'none';
+    });
+};
+
 const addItemToLocalStorage = (items) => {
     localStorage.setItem('cart', JSON.stringify(items));
     location.reload();

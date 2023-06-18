@@ -313,9 +313,9 @@ body {
     transform: scale(1.1);
 }
 
-.dropdown:hover .dropdown-content {
+/* .dropdown:focus .dropdown-content {
     display: block;
-}
+} */
 
 .wrapper {
     display: flex;
