@@ -59,7 +59,7 @@ const cartShow = () => {
         document.getElementsByClassName('dropdown-content')[0];
     dropdownContent.style.display = 'block';
 
-    dropdownContent.addEventListener('mouseleave', () => {
+    dropdownContent.addEventListener('mouseout', () => {
         dropdownContent.style.display = 'none';
     });
 };
